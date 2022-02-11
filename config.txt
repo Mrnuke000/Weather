@@ -1,0 +1,12 @@
+# importing requests and json
+import requests, json
+# base URL
+BASE_URL = "http://api.openweathermap.org/data/2.5/weather?"
+CITY = "Solana Beach"
+API_KEY = "e5edf2a56c8fa822eee2177b99fa886b"
+# upadting the URL
+URL = BASE_URL + "q=" + CITY + "&appid=" + API_KEY
+#URL = "http://api.openweathermap.org/data/2.5/forecast?id=524901&appid=e5edf2a56c8fa822eee2177b99fa886b"
+# HTTP request
+response = requests.get(URL)
+
